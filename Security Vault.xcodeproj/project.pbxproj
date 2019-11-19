@@ -22,6 +22,8 @@
 		BBD26A9423838AE500A5B483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBD26A9723838AE500A5B483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBD26A9923838AE500A5B483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD26AA023838EFE00A5B483 /* NimbusSanL-Reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NimbusSanL-Reg.otf"; path = "../../../../../Downloads/nimbus-sans-l/NimbusSanL-Reg.otf"; sourceTree = "<group>"; };
+		BBD26AA123838EFE00A5B483 /* NimbusSanL-Bol.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NimbusSanL-Bol.otf"; path = "../../../../../Downloads/nimbus-sans-l/NimbusSanL-Bol.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		BBD26A8C23838AE300A5B483 /* Security Vault */ = {
 			isa = PBXGroup;
 			children = (
+				BBD26A9F23838EDD00A5B483 /* fonts */,
 				BBD26A8D23838AE300A5B483 /* AppDelegate.swift */,
 				BBD26A8F23838AE300A5B483 /* ViewController.swift */,
 				BBD26A9123838AE300A5B483 /* Main.storyboard */,
@@ -62,6 +65,15 @@
 				BBD26A9923838AE500A5B483 /* Info.plist */,
 			);
 			path = "Security Vault";
+			sourceTree = "<group>";
+		};
+		BBD26A9F23838EDD00A5B483 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BBD26AA123838EFE00A5B483 /* NimbusSanL-Bol.otf */,
+				BBD26AA023838EFE00A5B483 /* NimbusSanL-Reg.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

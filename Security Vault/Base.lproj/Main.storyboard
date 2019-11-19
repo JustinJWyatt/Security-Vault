@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NimbusSanL-Bol.otf">
+            <string>NimbusSanL-Bol</string>
+        </array>
+        <array key="NimbusSanL-Reg.otf">
+            <string>NimbusSanL-Reg</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Security_Vault" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Share Files." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXt-Hv-Eee">
+                                <rect key="frame" x="42" y="321" width="290" height="58"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Securely." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtF-Je-GTh">
+                                <rect key="frame" x="42" y="387" width="290" height="48"/>
+                                <fontDescription key="fontDescription" name="NimbusSanL-Reg" family="Nimbus Sans L" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Icon" translatesAutoresizingMaskIntoConstraints="NO" id="bFo-Mp-ci8">
+                                <rect key="frame" x="6" y="172" width="169" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="CUV-hi-Z76"/>
+                                    <constraint firstAttribute="width" constant="169" id="WGg-gc-4hT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxI-qO-qWu">
+                                <rect key="frame" x="42" y="557" width="141" height="46"/>
+                                <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="NQR-zP-3N9"/>
+                                    <constraint firstAttribute="height" constant="46" id="s57-c0-RaW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NimbusSanL-Bol" family="Nimbus Sans L" pointSize="20"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBW-KD-AkT">
+                                <rect key="frame" x="191" y="557" width="141" height="47"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.67450980392156867" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="NimbusSanL-Bol" family="Nimbus Sans L" pointSize="20"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.67450980390000004" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rXt-Hv-Eee" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1JC-8I-EsV"/>
+                            <constraint firstItem="bFo-Mp-ci8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="6" id="699-ov-Szh"/>
+                            <constraint firstItem="JxI-qO-qWu" firstAttribute="top" secondItem="iBW-KD-AkT" secondAttribute="top" id="CWK-DJ-WgN"/>
+                            <constraint firstItem="JxI-qO-qWu" firstAttribute="centerY" secondItem="iBW-KD-AkT" secondAttribute="centerY" id="QCa-xH-Tdu"/>
+                            <constraint firstItem="rXt-Hv-Eee" firstAttribute="leading" secondItem="OtF-Je-GTh" secondAttribute="leading" id="VcP-TU-R2R"/>
+                            <constraint firstItem="bFo-Mp-ci8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="172" id="Xca-A5-gky"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="iBW-KD-AkT" secondAttribute="bottom" constant="63" id="dqH-i3-gEY"/>
+                            <constraint firstItem="rXt-Hv-Eee" firstAttribute="top" secondItem="bFo-Mp-ci8" secondAttribute="bottom" constant="19" id="icH-qp-hd4"/>
+                            <constraint firstItem="rXt-Hv-Eee" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="m5c-6W-wKb"/>
+                            <constraint firstItem="OtF-Je-GTh" firstAttribute="leading" secondItem="JxI-qO-qWu" secondAttribute="leading" id="qJH-96-ZMa"/>
+                            <constraint firstItem="OtF-Je-GTh" firstAttribute="top" secondItem="rXt-Hv-Eee" secondAttribute="bottom" constant="8" symbolic="YES" id="r3U-LN-cDI"/>
+                            <constraint firstItem="iBW-KD-AkT" firstAttribute="leading" secondItem="JxI-qO-qWu" secondAttribute="trailing" constant="8" symbolic="YES" id="rYm-Lw-JWQ"/>
+                            <constraint firstItem="OtF-Je-GTh" firstAttribute="trailing" secondItem="iBW-KD-AkT" secondAttribute="trailing" id="tzd-4A-xjC"/>
+                            <constraint firstItem="rXt-Hv-Eee" firstAttribute="trailing" secondItem="OtF-Je-GTh" secondAttribute="trailing" id="ubA-nF-rcH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="128.18590704647679"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Main Icon" width="100" height="100"/>
+    </resources>
 </document>
